@@ -1,35 +1,93 @@
-
-.container {
-    display: flex;
-    justify-content: center;
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-#task { 
-    padding: 0;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f6f8fc, #e0eafc);
+    height: 100vh;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    padding-top: 60px;
+    color: #333;
 }
 
-.task {
+.container {
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.idk {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.idk:focus {
+    border-color: #5c9ded;
+}
+
+.button {
+    background-color: #5c9ded;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #468de0;
+}
+
+#task {
+    margin-top: 30px;
+    list-style: none;
+    width: 90%;
+    max-width: 500px;
+    padding: 0;
+}
+
+#task li {
+    background: #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    font-size: 16px;
+    transition: transform 0.2s ease;
 }
 
+#task li:hover {
+    transform: scale(1.02);
+}
 
-.delete {
-    margin-left: 40px; 
+#task li .delete {
+    color: crimson;
     cursor: pointer;
-    background-color: red; 
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.delete:hover {
-    background-color: darkred; 
+    font-weight: bold;
+    margin-left: 15px;
 }
