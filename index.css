@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: royalblue;
+}
+
+a:hover {
+    color: darkblue;
+}
