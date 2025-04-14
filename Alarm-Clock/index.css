@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.alarm-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.clock {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.alarm-setter select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.set-alarm, .clear-alarm {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.clear-alarm {
+    background-color: #dc3545;
+}
+
+.set-alarm:hover {
+    background-color: #0056b3;
+}
+
+.clear-alarm:hover {
+    background-color: #b02a37;
+}
