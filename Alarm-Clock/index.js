@@ -1,6 +1,6 @@
 let alarmTime = null;
 let isAlarmSet = false;
-const alarmSound = new Audio("/Alarm-Clock/alarm.mp3"); 
+const alarmSound = new Audio("/Alarm-Clock/alarm.mp3");
 
 function updateTime() {
     const timeNow = new Date();
@@ -17,7 +17,6 @@ function updateTime() {
 
     if (hours === 0) hours = 12;
 
-    // Pad single digits with zero
     hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
@@ -32,31 +31,26 @@ function updateTime() {
     }
 }
 
-
-
 setInterval(updateTime, 1000);
 
-updateTime();   
+updateTime();
 
-const hours=document.querySelector(".select-hour")
-const minutes=document.querySelector(".select-minute")
+const hours = document.querySelector(".select-hour")
+const minutes = document.querySelector(".select-minute")
 
 for (let index = 1; index < 12; index++) {
-    const option=document.createElement("option");
-    option.value=index<10? "0"+index:index;
-    option.text=index<10? "0"+index:index;
+    const option = document.createElement("option");
+    option.value = index < 10 ? "0" + index : index;
+    option.text = index < 10 ? "0" + index : index;
     hours.appendChild(option);
 }
 
 for (let index = 0; index < 59; index++) {
-    const optionmin=document.createElement("option");
-    optionmin.value=index<10? "0"+index:index;
-    optionmin.text=index<10? "0"+index:index;
+    const optionmin = document.createElement("option");
+    optionmin.value = index < 10 ? "0" + index : index;
+    optionmin.text = index < 10 ? "0" + index : index;
     minutes.appendChild(optionmin);
 }
-
-
-
 
 const setAlarmBtn = document.querySelector(".set-alarm");
 
