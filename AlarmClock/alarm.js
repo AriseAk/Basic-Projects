@@ -1,6 +1,6 @@
 let alarmTime = null;
 let isAlarmSet = false;
-const alarmSound = new Audio("./Alarm-Clock/alarm.mp3");
+const alarmSound = new Audio("/AlarmClock/alarm.mp3");
 
 function updateTime() {
     const timeNow = new Date();
